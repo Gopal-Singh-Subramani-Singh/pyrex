@@ -1,0 +1,1670 @@
+{
+  "run_id": "1a0de60b",
+  "label": "demo-run-2",
+  "git_sha": null,
+  "python_version": "3.11.9",
+  "torch_version": "2.11.0",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "chip": "Apple M4",
+  "results": [
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "matmul",
+      "backend_id": "pytorch_mps",
+      "precision": "fp32",
+      "params": {
+        "size": [
+          512,
+          512,
+          512
+        ]
+      },
+      "latency": {
+        "mean_ms": 1.1830584015115164,
+        "std_ms": 0.8765251865238706,
+        "p50_ms": 0.9229585048160516,
+        "p95_ms": 2.5272188999224423,
+        "p99_ms": 3.5492437786888336,
+        "min_ms": 0.7604590064147487,
+        "max_ms": 3.80474999838043,
+        "raw_ms": [
+          0.9657920018071309,
+          0.8740829944144934,
+          0.7604590064147487,
+          0.9617080067982897,
+          0.9356670052511618,
+          0.9378749964525923,
+          0.9102500043809414,
+          0.7754999969620258,
+          0.9045000042533502,
+          3.80474999838043
+        ]
+      },
+      "throughput_ops_per_sec": 0.22689958133684487,
+      "flops": 268435456.0,
+      "bytes_transferred": 3145728.0,
+      "arithmetic_intensity": 85.33333333333333,
+      "telemetry": {
+        "mps_memory_mb": 2.0,
+        "cpu_memory_mb": 249.9375,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:23.306904"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "matmul",
+      "backend_id": "pytorch_mps",
+      "precision": "fp16",
+      "params": {
+        "size": [
+          512,
+          512,
+          512
+        ]
+      },
+      "latency": {
+        "mean_ms": 0.7390748985926621,
+        "std_ms": 0.16177697692116302,
+        "p50_ms": 0.6669790018349886,
+        "p95_ms": 1.0094187469803726,
+        "p99_ms": 1.0839837489766069,
+        "min_ms": 0.5826659908052534,
+        "max_ms": 1.1026249994756654,
+        "raw_ms": [
+          0.825958006316796,
+          0.8954999939305708,
+          1.1026249994756654,
+          0.8255830034613609,
+          0.7097500056261197,
+          0.5826659908052534,
+          0.6134589930297807,
+          0.599749997491017,
+          0.6112499977461994,
+          0.6242079980438575
+        ]
+      },
+      "throughput_ops_per_sec": 0.3632046718284598,
+      "flops": 268435456.0,
+      "bytes_transferred": 1572864.0,
+      "arithmetic_intensity": 170.66666666666666,
+      "telemetry": {
+        "mps_memory_mb": 2.0,
+        "cpu_memory_mb": 252.375,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:23.582175"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "attention",
+      "backend_id": "pytorch_mps",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 128,
+        "hidden_dim": 768,
+        "num_heads": 12
+      },
+      "latency": {
+        "mean_ms": 0.7740583998383954,
+        "std_ms": 0.10018454991779391,
+        "p50_ms": 0.7507289992645383,
+        "p95_ms": 0.9106876474106684,
+        "p99_ms": 0.9186375263379887,
+        "min_ms": 0.5789169954368845,
+        "max_ms": 0.9206249960698187,
+        "raw_ms": [
+          0.5789169954368845,
+          0.8447920117760077,
+          0.7409579993691295,
+          0.8552500075893477,
+          0.7569160079583526,
+          0.6843329902039841,
+          0.744541990570724,
+          0.9206249960698187,
+          0.8985419990494847,
+          0.7157090003602207
+        ]
+      },
+      "throughput_ops_per_sec": 0.06502306287291505,
+      "flops": 50331648.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 3.0,
+        "cpu_memory_mb": 289.5,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:23.876299"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "attention",
+      "backend_id": "pytorch_mps",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 128,
+        "hidden_dim": 768,
+        "num_heads": 12
+      },
+      "latency": {
+        "mean_ms": 1.0357417006161995,
+        "std_ms": 0.19297017995319482,
+        "p50_ms": 1.0606040013954043,
+        "p95_ms": 1.3104607540299182,
+        "p99_ms": 1.3814257495687343,
+        "min_ms": 0.6999579927651212,
+        "max_ms": 1.3991669984534383,
+        "raw_ms": [
+          1.2020420108456165,
+          0.7483329973183572,
+          0.6999579927651212,
+          1.128832998801954,
+          0.9557919984217733,
+          1.0350420052418485,
+          1.3991669984534383,
+          1.0670420015230775,
+          1.063083007466048,
+          1.0581249953247607
+        ]
+      },
+      "throughput_ops_per_sec": 0.04859478764836436,
+      "flops": 50331648.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 1.875,
+        "cpu_memory_mb": 292.96875,
+        "power_watts": null,
+        "cpu_percent": 14.4
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:24.178105"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "ffn",
+      "backend_id": "pytorch_mps",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768,
+        "ffn_dim": 3072
+      },
+      "latency": {
+        "mean_ms": 4.216999998607207,
+        "std_ms": 0.42046518050612997,
+        "p50_ms": 4.136832998483442,
+        "p95_ms": 4.905802454595686,
+        "p99_ms": 5.152927693125093,
+        "min_ms": 3.6315000033937395,
+        "max_ms": 5.214709002757445,
+        "raw_ms": [
+          5.214709002757445,
+          4.205083998385817,
+          3.6315000033937395,
+          4.0097500022966415,
+          3.8837499887449667,
+          4.528250006842427,
+          4.125457999180071,
+          4.499290997046046,
+          4.1482079977868125,
+          3.923999989638105
+        ]
+      },
+      "throughput_ops_per_sec": 1.145799907421357,
+      "flops": 4831838208.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 20.625,
+        "cpu_memory_mb": 299.03125,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:24.548631"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "ffn",
+      "backend_id": "pytorch_mps",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768,
+        "ffn_dim": 3072
+      },
+      "latency": {
+        "mean_ms": 3.5756582001340576,
+        "std_ms": 0.20782467241271235,
+        "p50_ms": 3.5657500047818758,
+        "p95_ms": 3.8448223953309935,
+        "p99_ms": 3.8592972767946776,
+        "min_ms": 3.2497909996891394,
+        "max_ms": 3.8629159971605986,
+        "raw_ms": [
+          3.8227079930948094,
+          3.476042009424418,
+          3.8629159971605986,
+          3.695000006700866,
+          3.4670000022742897,
+          3.2497909996891394,
+          3.3199169993167743,
+          3.413041995372623,
+          3.7947079981677234,
+          3.6554580001393333
+        ]
+      },
+      "throughput_ops_per_sec": 1.3513143420192808,
+      "flops": 4831838208.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 13.875,
+        "cpu_memory_mb": 304.5,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:24.908823"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "layernorm",
+      "backend_id": "pytorch_mps",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768
+      },
+      "latency": {
+        "mean_ms": 0.6014253027387895,
+        "std_ms": 0.09788826516985127,
+        "p50_ms": 0.569875497603789,
+        "p95_ms": 0.7572168462502301,
+        "p99_ms": 0.8652769653417636,
+        "min_ms": 0.5507500027306378,
+        "max_ms": 0.8922919951146469,
+        "raw_ms": [
+          0.8922919951146469,
+          0.5898330127820373,
+          0.551584002096206,
+          0.5594590038526803,
+          0.592124997638166,
+          0.5507500027306378,
+          0.5615420086542144,
+          0.5769170093117282,
+          0.5707090022042394,
+          0.5690419930033386
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 3145728.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 2.625,
+        "cpu_memory_mb": 305.21875,
+        "power_watts": null,
+        "cpu_percent": 14.5
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:25.198887"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "layernorm",
+      "backend_id": "pytorch_mps",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768
+      },
+      "latency": {
+        "mean_ms": 0.6625127018196508,
+        "std_ms": 0.10545151192130096,
+        "p50_ms": 0.6891254961374216,
+        "p95_ms": 0.7801936058967839,
+        "p99_ms": 0.8006387283967342,
+        "min_ms": 0.388542001019232,
+        "max_ms": 0.8057500090217218,
+        "raw_ms": [
+          0.8057500090217218,
+          0.6975830037845299,
+          0.6861669971840456,
+          0.6640840001637116,
+          0.6138750031823292,
+          0.6245840049814433,
+          0.388542001019232,
+          0.7489580020774156,
+          0.7035000016912818,
+          0.6920839950907975
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 1572864.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 1.875,
+        "cpu_memory_mb": 305.265625,
+        "power_watts": null,
+        "cpu_percent": 13.2
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:25.494996"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "conv2d",
+      "backend_id": "pytorch_mps",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "in_channels": 64,
+        "out_channels": 128,
+        "image_size": 56,
+        "kernel_size": 3
+      },
+      "latency": {
+        "mean_ms": 1.3094460009597242,
+        "std_ms": 0.20269277469639285,
+        "p50_ms": 1.2383755019982345,
+        "p95_ms": 1.6800457982753867,
+        "p99_ms": 1.7451755590445828,
+        "min_ms": 1.039541995851323,
+        "max_ms": 1.7614579992368817,
+        "raw_ms": [
+          1.7614579992368817,
+          1.039541995851323,
+          1.1789580021286383,
+          1.3485420058714226,
+          1.2514590052887797,
+          1.3365000049816445,
+          1.5805419971002266,
+          1.2252919987076893,
+          1.1830000003101304,
+          1.1891670001205057
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 2.125,
+        "cpu_memory_mb": 307.671875,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:25.810309"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "conv2d",
+      "backend_id": "pytorch_mps",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "in_channels": 64,
+        "out_channels": 128,
+        "image_size": 56,
+        "kernel_size": 3
+      },
+      "latency": {
+        "mean_ms": 1.128596100897994,
+        "std_ms": 0.09225901413324353,
+        "p50_ms": 1.1072085035266355,
+        "p95_ms": 1.2820044990803579,
+        "p99_ms": 1.338434493954992,
+        "min_ms": 0.9903339960146695,
+        "max_ms": 1.3525419926736504,
+        "raw_ms": [
+          1.162542001111433,
+          1.1957920069107786,
+          1.1091670021414757,
+          0.9903339960146695,
+          1.0409579990664497,
+          1.1280839971732348,
+          1.3525419926736504,
+          1.1034589988412336,
+          1.0978330101352185,
+          1.1052500049117953
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 1.875,
+        "cpu_memory_mb": 310.0,
+        "power_watts": null,
+        "cpu_percent": 15.1
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:26.116034"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "embedding",
+      "backend_id": "pytorch_mps",
+      "precision": "fp32",
+      "params": {
+        "vocab_size": 32000,
+        "embedding_dim": 768,
+        "seq_len": 128
+      },
+      "latency": {
+        "mean_ms": 0.589904202206526,
+        "std_ms": 0.24001851924312811,
+        "p50_ms": 0.5548545013880357,
+        "p95_ms": 0.973837500350782,
+        "p99_ms": 1.181467504502507,
+        "min_ms": 0.32529199961572886,
+        "max_ms": 1.233375005540438,
+        "raw_ms": [
+          0.6370830087689683,
+          1.233375005540438,
+          0.6566249940078706,
+          0.6197500042617321,
+          0.32529199961572886,
+          0.43700000969693065,
+          0.632499999483116,
+          0.48995899851433933,
+          0.44925000111106783,
+          0.41820800106506795
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 786432.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 94.125,
+        "cpu_memory_mb": 407.046875,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:26.621818"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "embedding",
+      "backend_id": "pytorch_mps",
+      "precision": "fp16",
+      "params": {
+        "vocab_size": 32000,
+        "embedding_dim": 768,
+        "seq_len": 128
+      },
+      "latency": {
+        "mean_ms": 0.568200001725927,
+        "std_ms": 0.07574104511500646,
+        "p50_ms": 0.5665420030709356,
+        "p95_ms": 0.6902979526785202,
+        "p99_ms": 0.7045931942411698,
+        "min_ms": 0.46350000775419176,
+        "max_ms": 0.7081670046318322,
+        "raw_ms": [
+          0.5424590053735301,
+          0.5579169956035912,
+          0.5028750019846484,
+          0.46350000775419176,
+          0.4684579907916486,
+          0.7081670046318322,
+          0.6000409921398386,
+          0.5949580081505701,
+          0.57516701053828,
+          0.6684580002911389
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 393216.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 47.25,
+        "cpu_memory_mb": 455.078125,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:27.073018"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "matmul",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp32",
+      "params": {
+        "size": [
+          512,
+          512,
+          512
+        ]
+      },
+      "latency": {
+        "mean_ms": 0.3179459003149532,
+        "std_ms": 0.016371099808887138,
+        "p50_ms": 0.3255414994782768,
+        "p95_ms": 0.3278831522038672,
+        "p99_ms": 0.3285430332471151,
+        "min_ms": 0.2811660087900236,
+        "max_ms": 0.32870800350792706,
+        "raw_ms": [
+          0.3258340002503246,
+          0.3257919888710603,
+          0.32870800350792706,
+          0.3252910100854933,
+          0.3268750006100163,
+          0.3249589935876429,
+          0.3259590012021363,
+          0.3250419977121055,
+          0.28983299853280187,
+          0.2811660087900236
+        ]
+      },
+      "throughput_ops_per_sec": 0.8442802870994445,
+      "flops": 268435456.0,
+      "bytes_transferred": 3145728.0,
+      "arithmetic_intensity": 85.33333333333333,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 458.15625,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:27.352669"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "matmul",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp16",
+      "params": {
+        "size": [
+          512,
+          512,
+          512
+        ]
+      },
+      "latency": {
+        "mean_ms": 73.4793000985519,
+        "std_ms": 0.6280684451204759,
+        "p50_ms": 73.32845799828647,
+        "p95_ms": 74.46007689795806,
+        "p99_ms": 74.59758177326876,
+        "min_ms": 72.79341699904762,
+        "max_ms": 74.63195799209643,
+        "raw_ms": [
+          72.81345900264569,
+          72.90129200555384,
+          72.79341699904762,
+          74.09962499514222,
+          73.24374999734573,
+          72.94845899741631,
+          74.63195799209643,
+          74.25000000512227,
+          73.69787499192171,
+          73.4131659992272
+        ]
+      },
+      "throughput_ops_per_sec": 0.0036532119337006346,
+      "flops": 268435456.0,
+      "bytes_transferred": 1572864.0,
+      "arithmetic_intensity": 170.66666666666666,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 458.609375,
+        "power_watts": null,
+        "cpu_percent": 8.8
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:28.587470"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "attention",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 128,
+        "hidden_dim": 768,
+        "num_heads": 12
+      },
+      "latency": {
+        "mean_ms": 0.42194170091534033,
+        "std_ms": 0.14291052555357564,
+        "p50_ms": 0.35183349973522127,
+        "p95_ms": 0.7018434524070472,
+        "p99_ms": 0.7059686898719519,
+        "min_ms": 0.32141599513124675,
+        "max_ms": 0.7069999992381781,
+        "raw_ms": [
+          0.6955410062801093,
+          0.7069999992381781,
+          0.3971670084865764,
+          0.4117920034332201,
+          0.3712920006364584,
+          0.33029200858436525,
+          0.3277079958934337,
+          0.32483399263583124,
+          0.33237499883398414,
+          0.32141599513124675
+        ]
+      },
+      "throughput_ops_per_sec": 0.11928578732752157,
+      "flops": 50331648.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 460.078125,
+        "power_watts": null,
+        "cpu_percent": 11.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:28.850045"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "attention",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 128,
+        "hidden_dim": 768,
+        "num_heads": 12
+      },
+      "latency": {
+        "mean_ms": 3.516150003997609,
+        "std_ms": 0.577870437207336,
+        "p50_ms": 3.3527710038470104,
+        "p95_ms": 4.4993766030529505,
+        "p99_ms": 4.658241726574488,
+        "min_ms": 2.854584003216587,
+        "max_ms": 4.697958007454872,
+        "raw_ms": [
+          4.697958007454872,
+          4.256665997672826,
+          3.9326250116573647,
+          3.591041997424327,
+          3.476375000900589,
+          3.229167006793432,
+          3.1456249998882413,
+          2.9875830077799037,
+          2.9898750071879476,
+          2.854584003216587
+        ]
+      },
+      "throughput_ops_per_sec": 0.014314420017000567,
+      "flops": 50331648.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 460.15625,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:29.162800"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "ffn",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768,
+        "ffn_dim": 3072
+      },
+      "latency": {
+        "mean_ms": 4.299941501813009,
+        "std_ms": 0.3500556394874489,
+        "p50_ms": 4.206395504297689,
+        "p95_ms": 4.887810452055419,
+        "p99_ms": 5.011095690570073,
+        "min_ms": 3.9117090054787695,
+        "max_ms": 5.041917000198737,
+        "raw_ms": [
+          5.041917000198737,
+          4.699458004324697,
+          4.513207997661084,
+          4.422124999109656,
+          4.277625004760921,
+          4.135166003834456,
+          4.038915998535231,
+          3.939957998227328,
+          4.019333005999215,
+          3.9117090054787695
+        ]
+      },
+      "throughput_ops_per_sec": 1.1236985912396074,
+      "flops": 4831838208.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 490.4375,
+        "power_watts": null,
+        "cpu_percent": 19.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:29.518690"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "ffn",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768,
+        "ffn_dim": 3072
+      },
+      "latency": {
+        "mean_ms": 1372.3379624992958,
+        "std_ms": 23.958538605873766,
+        "p50_ms": 1367.9670209967298,
+        "p95_ms": 1415.942195650132,
+        "p99_ms": 1423.657205530617,
+        "min_ms": 1341.7169579915935,
+        "max_ms": 1425.5859580007382,
+        "raw_ms": [
+          1341.7169579915935,
+          1351.904209004715,
+          1355.9578330023214,
+          1358.094750001328,
+          1425.5859580007382,
+          1373.3808329998283,
+          1365.946082994924,
+          1369.9879589985358,
+          1376.6496669995831,
+          1404.155374999391
+        ]
+      },
+      "throughput_ops_per_sec": 0.0035208806722800833,
+      "flops": 4831838208.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 496.453125,
+        "power_watts": null,
+        "cpu_percent": 9.7
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:47.559100"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "layernorm",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768
+      },
+      "latency": {
+        "mean_ms": 0.15364580031018704,
+        "std_ms": 0.033437761384326754,
+        "p50_ms": 0.13822899927617982,
+        "p95_ms": 0.2088767461827956,
+        "p99_ms": 0.2195417435723357,
+        "min_ms": 0.11970900231972337,
+        "max_ms": 0.2222079929197207,
+        "raw_ms": [
+          0.19258300017099828,
+          0.16195799980778247,
+          0.14208299398887902,
+          0.13437500456348062,
+          0.1282500015804544,
+          0.12358299863990396,
+          0.18483400344848633,
+          0.12687500566244125,
+          0.11970900231972337,
+          0.2222079929197207
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 3145728.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 496.5,
+        "power_watts": null,
+        "cpu_percent": 6.8
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:47.819860"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "layernorm",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768
+      },
+      "latency": {
+        "mean_ms": 0.1530996974906884,
+        "std_ms": 0.008373835160306247,
+        "p50_ms": 0.15062450256664306,
+        "p95_ms": 0.1661124908423517,
+        "p99_ms": 0.16692249177140184,
+        "min_ms": 0.14033299521543086,
+        "max_ms": 0.16712499200366437,
+        "raw_ms": [
+          0.15029100177343935,
+          0.15016600082162768,
+          0.15316599456127733,
+          0.14933300553821027,
+          0.16712499200366437,
+          0.16487498942296952,
+          0.16149999282788485,
+          0.15095800335984677,
+          0.14033299521543086,
+          0.14324999938253313
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 1572864.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 496.53125,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:48.111690"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "conv2d",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "in_channels": 64,
+        "out_channels": 128,
+        "image_size": 56,
+        "kernel_size": 3
+      },
+      "latency": {
+        "mean_ms": 0.41786229849094525,
+        "std_ms": 0.016134991575352683,
+        "p50_ms": 0.4129584922338836,
+        "p95_ms": 0.4462205048184842,
+        "p99_ms": 0.45171050471253693,
+        "min_ms": 0.4011659912066534,
+        "max_ms": 0.4530830046860501,
+        "raw_ms": [
+          0.4530830046860501,
+          0.42124999163206667,
+          0.42462500277906656,
+          0.4187079903203994,
+          0.43783300498034805,
+          0.4072089941473678,
+          0.4064579989062622,
+          0.40220799564849585,
+          0.4011659912066534,
+          0.40608301060274243
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 496.734375,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:48.383382"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "conv2d",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "in_channels": 64,
+        "out_channels": 128,
+        "image_size": 56,
+        "kernel_size": 3
+      },
+      "latency": {
+        "mean_ms": 54.718162400240544,
+        "std_ms": 0.24053589348554164,
+        "p50_ms": 54.721083004551474,
+        "p95_ms": 55.03625639685197,
+        "p99_ms": 55.10005128191551,
+        "min_ms": 54.270665990770794,
+        "max_ms": 55.1160000031814,
+        "raw_ms": [
+          54.270665990770794,
+          54.86354199820198,
+          54.66466600773856,
+          54.77750000136439,
+          54.653125000186265,
+          54.88779200823046,
+          54.40533299406525,
+          54.60420800955035,
+          54.938791989116,
+          55.1160000031814
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 496.734375,
+        "power_watts": null,
+        "cpu_percent": 9.7
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:49.368899"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "embedding",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp32",
+      "params": {
+        "vocab_size": 32000,
+        "embedding_dim": 768,
+        "seq_len": 128
+      },
+      "latency": {
+        "mean_ms": 0.030408499878831208,
+        "std_ms": 0.003587222985757172,
+        "p50_ms": 0.029333496058825403,
+        "p95_ms": 0.03647120101959444,
+        "p99_ms": 0.039561435842188075,
+        "min_ms": 0.027417001547291875,
+        "max_ms": 0.04033399454783648,
+        "raw_ms": [
+          0.04033399454783648,
+          0.03125000512227416,
+          0.031750008929520845,
+          0.029125003493390977,
+          0.03012499655596912,
+          0.02954198862425983,
+          0.029125003493390977,
+          0.027667003450915217,
+          0.027749993023462594,
+          0.027417001547291875
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 786432.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 496.8125,
+        "power_watts": null,
+        "cpu_percent": 9.4
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:49.793606"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "embedding",
+      "backend_id": "pytorch_cpu",
+      "precision": "fp16",
+      "params": {
+        "vocab_size": 32000,
+        "embedding_dim": 768,
+        "seq_len": 128
+      },
+      "latency": {
+        "mean_ms": 0.03682939859572798,
+        "std_ms": 0.015856656477339665,
+        "p50_ms": 0.026541492843534797,
+        "p95_ms": 0.06376685196300969,
+        "p99_ms": 0.06598697713343427,
+        "min_ms": 0.02416699135210365,
+        "max_ms": 0.06654200842604041,
+        "raw_ms": [
+          0.06654200842604041,
+          0.06037499406374991,
+          0.05366701225284487,
+          0.03541700425557792,
+          0.02504199801478535,
+          0.027165995561517775,
+          0.025083994842134416,
+          0.02591699012555182,
+          0.024916997062973678,
+          0.02416699135210365
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 393216.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 496.8125,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:50.276404"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "matmul",
+      "backend_id": "onnx_rt",
+      "precision": "fp32",
+      "params": {
+        "size": [
+          512,
+          512,
+          512
+        ]
+      },
+      "latency": {
+        "mean_ms": 1.3681330980034545,
+        "std_ms": 0.06204159274979197,
+        "p50_ms": 1.3734995009144768,
+        "p95_ms": 1.43916469605756,
+        "p99_ms": 1.4491993376577739,
+        "min_ms": 1.2041660083923489,
+        "max_ms": 1.4517079980578274,
+        "raw_ms": [
+          1.3768329954473302,
+          1.4238339936127886,
+          1.4517079980578274,
+          1.3973749883007258,
+          1.3616249925689772,
+          1.3571249874075875,
+          1.3701660063816234,
+          1.3837080041412264,
+          1.3547910057241097,
+          1.2041660083923489
+        ]
+      },
+      "throughput_ops_per_sec": 0.1962056589316738,
+      "flops": 268435456.0,
+      "bytes_transferred": 3145728.0,
+      "arithmetic_intensity": 85.33333333333333,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 651.046875,
+        "power_watts": null,
+        "cpu_percent": 11.8
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:51.550548"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "matmul",
+      "backend_id": "onnx_rt",
+      "precision": "fp16",
+      "params": {
+        "size": [
+          512,
+          512,
+          512
+        ]
+      },
+      "latency": {
+        "mean_ms": 1.3027001987211406,
+        "std_ms": 0.14125210226624288,
+        "p50_ms": 1.3497295003617182,
+        "p95_ms": 1.4150688977679238,
+        "p99_ms": 1.4217137772357091,
+        "min_ms": 0.9520000021439046,
+        "max_ms": 1.4233749971026555,
+        "raw_ms": [
+          1.3692920038010925,
+          1.4032499893801287,
+          1.4049169985810295,
+          1.330166996922344,
+          1.1277919984422624,
+          0.9520000021439046,
+          1.372625003568828,
+          1.4233749971026555,
+          1.3239999971119687,
+          1.3195840001571923
+        ]
+      },
+      "throughput_ops_per_sec": 0.20606080836060578,
+      "flops": 268435456.0,
+      "bytes_transferred": 1572864.0,
+      "arithmetic_intensity": 170.66666666666666,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 651.75,
+        "power_watts": null,
+        "cpu_percent": 7.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:52.077173"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "attention",
+      "backend_id": "onnx_rt",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 128,
+        "hidden_dim": 768,
+        "num_heads": 12
+      },
+      "latency": {
+        "mean_ms": 0.009191596473101526,
+        "std_ms": 0.004273360028722497,
+        "p50_ms": 0.007874994480516762,
+        "p95_ms": 0.016143597167683755,
+        "p99_ms": 0.02002871930017136,
+        "min_ms": 0.00508299854118377,
+        "max_ms": 0.02099999983329326,
+        "raw_ms": [
+          0.009832991054281592,
+          0.010042000212706625,
+          0.02099999983329326,
+          0.005916997906751931,
+          0.010207993909716606,
+          0.008457995136268437,
+          0.007291993824765086,
+          0.00695799826644361,
+          0.007124996045604348,
+          0.00508299854118377
+        ]
+      },
+      "throughput_ops_per_sec": 5.475833077234358,
+      "flops": 50331648.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 651.5625,
+        "power_watts": null,
+        "cpu_percent": 7.6
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:52.639426"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "attention",
+      "backend_id": "onnx_rt",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 128,
+        "hidden_dim": 768,
+        "num_heads": 12
+      },
+      "latency": {
+        "mean_ms": 0.009070700616575778,
+        "std_ms": 0.00159904237518793,
+        "p50_ms": 0.009312498150393367,
+        "p95_ms": 0.011404502583900465,
+        "p99_ms": 0.012214503512950614,
+        "min_ms": 0.006875008693896234,
+        "max_ms": 0.012417003745213151,
+        "raw_ms": [
+          0.007124996045604348,
+          0.012417003745213151,
+          0.009790994226932526,
+          0.009791008778847754,
+          0.010167001164518297,
+          0.008624992915429175,
+          0.009458002750761807,
+          0.009166993550024927,
+          0.007291004294529557,
+          0.006875008693896234
+        ]
+      },
+      "throughput_ops_per_sec": 5.548815921454189,
+      "flops": 50331648.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 651.5625,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:53.151136"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "ffn",
+      "backend_id": "onnx_rt",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768,
+        "ffn_dim": 3072
+      },
+      "latency": {
+        "mean_ms": 23.574020994419698,
+        "std_ms": 1.6433624332099372,
+        "p50_ms": 23.73347949469462,
+        "p95_ms": 25.51444839409669,
+        "p99_ms": 25.64322327627451,
+        "min_ms": 20.86149998649489,
+        "max_ms": 25.675416996818967,
+        "raw_ms": [
+          21.358832993428223,
+          20.86149998649489,
+          22.124875002191402,
+          23.377791992970742,
+          25.31770899076946,
+          25.056582991965115,
+          22.8399169864133,
+          25.675416996818967,
+          24.0891669964185,
+          25.038417006726377
+        ]
+      },
+      "throughput_ops_per_sec": 0.2049645331674119,
+      "flops": 4831838208.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 792.421875,
+        "power_watts": null,
+        "cpu_percent": 10.7
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:54.252397"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "ffn",
+      "backend_id": "onnx_rt",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768,
+        "ffn_dim": 3072
+      },
+      "latency": {
+        "mean_ms": 25.08336680039065,
+        "std_ms": 1.6302543127136886,
+        "p50_ms": 25.643895998655353,
+        "p95_ms": 27.09007035664399,
+        "p99_ms": 27.209380477579543,
+        "min_ms": 22.493249998660758,
+        "max_ms": 27.23920800781343,
+        "raw_ms": [
+          26.01045899791643,
+          25.568124998244457,
+          26.907791005214676,
+          24.0984580013901,
+          25.71966699906625,
+          26.46670899412129,
+          27.23920800781343,
+          22.493249998660758,
+          23.438042000634596,
+          22.89195900084451
+        ]
+      },
+      "throughput_ops_per_sec": 0.19263116655953652,
+      "flops": 4831838208.0,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 810.90625,
+        "power_watts": null,
+        "cpu_percent": 10.6
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:55.301104"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "layernorm",
+      "backend_id": "onnx_rt",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768
+      },
+      "latency": {
+        "mean_ms": 0.007596000796183944,
+        "std_ms": 0.00132486539659689,
+        "p50_ms": 0.007791997632011771,
+        "p95_ms": 0.008989949856186286,
+        "p99_ms": 0.009065193153219298,
+        "min_ms": 0.005249996320344508,
+        "max_ms": 0.00908400397747755,
+        "raw_ms": [
+          0.008874994819052517,
+          0.008208997314795852,
+          0.00549999822396785,
+          0.00720900425221771,
+          0.008709001122042537,
+          0.005249996320344508,
+          0.007374997949227691,
+          0.0069160014390945435,
+          0.008833012543618679,
+          0.00908400397747755
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 3145728.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 791.4375,
+        "power_watts": null,
+        "cpu_percent": 11.3
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:55.826623"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "layernorm",
+      "backend_id": "onnx_rt",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "seq_len": 512,
+        "hidden_dim": 768
+      },
+      "latency": {
+        "mean_ms": 0.0075042975367978215,
+        "std_ms": 0.0019259264246262854,
+        "p50_ms": 0.007375492714345455,
+        "p95_ms": 0.010178949014516547,
+        "p99_ms": 0.010268588230246678,
+        "min_ms": 0.005041001713834703,
+        "max_ms": 0.01029099803417921,
+        "raw_ms": [
+          0.007333990652114153,
+          0.010042000212706625,
+          0.01029099803417921,
+          0.00954199640545994,
+          0.007416994776576757,
+          0.008207993232645094,
+          0.005084002623334527,
+          0.005041001713834703,
+          0.007041991921141744,
+          0.00504200579598546
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 1572864.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 791.46875,
+        "power_watts": null,
+        "cpu_percent": 9.1
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:56.394941"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "conv2d",
+      "backend_id": "onnx_rt",
+      "precision": "fp32",
+      "params": {
+        "batch_size": 1,
+        "in_channels": 64,
+        "out_channels": 128,
+        "image_size": 56,
+        "kernel_size": 3
+      },
+      "latency": {
+        "mean_ms": 0.007641600677743554,
+        "std_ms": 0.002186920204891664,
+        "p50_ms": 0.0072499969974160194,
+        "p95_ms": 0.010968752758344635,
+        "p99_ms": 0.011193749232916161,
+        "min_ms": 0.004832996637560427,
+        "max_ms": 0.011249998351559043,
+        "raw_ms": [
+          0.010083007509820163,
+          0.010625008144415915,
+          0.007624999852851033,
+          0.0076669966802001,
+          0.005541005521081388,
+          0.011249998351559043,
+          0.0067920045694336295,
+          0.0051249953685328364,
+          0.006874994141981006,
+          0.004832996637560427
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 791.46875,
+        "power_watts": null,
+        "cpu_percent": 8.7
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:56.905982"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "conv2d",
+      "backend_id": "onnx_rt",
+      "precision": "fp16",
+      "params": {
+        "batch_size": 1,
+        "in_channels": 64,
+        "out_channels": 128,
+        "image_size": 56,
+        "kernel_size": 3
+      },
+      "latency": {
+        "mean_ms": 0.007583200931549072,
+        "std_ms": 0.0022408103052164187,
+        "p50_ms": 0.007312504749279469,
+        "p95_ms": 0.011629052460193632,
+        "p99_ms": 0.012259413488209248,
+        "min_ms": 0.0049579975893720984,
+        "max_ms": 0.012417003745213151,
+        "raw_ms": [
+          0.012417003745213151,
+          0.008083006832748652,
+          0.005541005521081388,
+          0.007375012501142919,
+          0.005374997272156179,
+          0.0049579975893720984,
+          0.006582995411008596,
+          0.010666000889614224,
+          0.007583992555737495,
+          0.0072499969974160194
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": null,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 791.484375,
+        "power_watts": null,
+        "cpu_percent": 8.6
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:57.474408"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "embedding",
+      "backend_id": "onnx_rt",
+      "precision": "fp32",
+      "params": {
+        "vocab_size": 32000,
+        "embedding_dim": 768,
+        "seq_len": 128
+      },
+      "latency": {
+        "mean_ms": 0.011029100278392434,
+        "std_ms": 0.0062365954841563384,
+        "p50_ms": 0.008833507308736444,
+        "p95_ms": 0.023007996060186997,
+        "p99_ms": 0.023367993562715128,
+        "min_ms": 0.005374997272156179,
+        "max_ms": 0.02345799293834716,
+        "raw_ms": [
+          0.008916002116166055,
+          0.02345799293834716,
+          0.02245799987576902,
+          0.0077500008046627045,
+          0.008792005246505141,
+          0.005750000127591193,
+          0.008875009370967746,
+          0.012124990462325513,
+          0.005374997272156179,
+          0.0067920045694336295
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 786432.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 791.484375,
+        "power_watts": null,
+        "cpu_percent": 11.2
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:57.979507"
+    },
+    {
+      "run_id": "1a0de60b",
+      "kernel_id": "embedding",
+      "backend_id": "onnx_rt",
+      "precision": "fp16",
+      "params": {
+        "vocab_size": 32000,
+        "embedding_dim": 768,
+        "seq_len": 128
+      },
+      "latency": {
+        "mean_ms": 0.008858302317094058,
+        "std_ms": 0.007389082141426327,
+        "p50_ms": 0.006791502528358251,
+        "p95_ms": 0.020445653353817737,
+        "p99_ms": 0.02875553502235562,
+        "min_ms": 0.004874993464909494,
+        "max_ms": 0.03083300543949008,
+        "raw_ms": [
+          0.007250011549331248,
+          0.005666996003128588,
+          0.0077500008046627045,
+          0.005417008651420474,
+          0.0077500008046627045,
+          0.0069580128183588386,
+          0.006624992238357663,
+          0.03083300543949008,
+          0.0054580013966187835,
+          0.004874993464909494
+        ]
+      },
+      "throughput_ops_per_sec": null,
+      "flops": null,
+      "bytes_transferred": 393216.0,
+      "arithmetic_intensity": null,
+      "telemetry": {
+        "mps_memory_mb": 0.0,
+        "cpu_memory_mb": 791.484375,
+        "power_watts": null,
+        "cpu_percent": 0.0
+      },
+      "profiler_ops": [],
+      "error": null,
+      "benchmarked_at": "2026-06-24T23:21:58.548944"
+    }
+  ],
+  "started_at": "2026-06-24T23:21:22.997479",
+  "finished_at": "2026-06-24T23:21:58.552904",
+  "total_seconds": 35.555425
+}

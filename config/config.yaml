@@ -1,0 +1,71 @@
+benchmark:
+  warmup_runs: 3
+  repeat_runs: 10
+  min_repeat_ms: 100
+  outlier_sigma: 3.0
+
+backends:
+  - id: "pytorch_mps"
+    enabled: true
+    device: "mps"
+  - id: "pytorch_cpu"
+    enabled: true
+    device: "cpu"
+  - id: "onnx_rt"
+    enabled: true
+    provider: "CoreMLExecutionProvider"
+  - id: "mlx"
+    enabled: true
+
+kernels:
+  - id: "matmul"
+    enabled: true
+    sizes: [[512, 512, 512], [1024, 1024, 1024], [2048, 2048, 2048]]
+  - id: "attention"
+    enabled: true
+    batch_sizes: [1, 8, 32]
+    seq_lengths: [128, 512]
+    hidden_dim: 768
+    num_heads: 12
+  - id: "ffn"
+    enabled: true
+    batch_sizes: [1, 8, 32]
+    seq_len: 512
+    hidden_dim: 768
+    ffn_dim: 3072
+  - id: "layernorm"
+    enabled: true
+    batch_sizes: [1, 8, 32]
+    seq_len: 512
+    hidden_dim: 768
+  - id: "conv2d"
+    enabled: true
+    batch_sizes: [1, 8]
+    in_channels: 64
+    out_channels: 128
+    image_size: 56
+    kernel_size: 3
+  - id: "embedding"
+    enabled: true
+    vocab_size: 32000
+    embedding_dim: 768
+    seq_lengths: [128, 512]
+
+precisions:
+  - "fp32"
+  - "fp16"
+
+regression:
+  threshold_pct: 5.0
+  min_z_score: 2.0
+  min_samples: 3
+
+roofline:
+  peak_tflops_fp32: 3.6
+  peak_tflops_fp16: 7.2
+  memory_bandwidth_gbs: 120.0
+
+store:
+  results_dir: "results"
+  baselines_dir: "baselines"
+  db_path: "results/pyrex.duckdb"
