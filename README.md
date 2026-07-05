@@ -261,3 +261,13 @@ open results/<run_id>/report.html
 ## Resume Bullet
 
 > Built a cross-backend ML inference benchmark suite comparing PyTorch MPS, ONNX Runtime, MLX, and CPU execution with latency, throughput, memory, and regression analysis on Apple Silicon.
+
+##Screenshots
+![](docs/Picture1.png)
+![](docs/Picture2.png)
+![](docs/Picture3.png)
+![](docs/Picture4.png)
+![](docs/Picture5.png)
+![](docs/Picture6.png)
+![](docs/Picture7.png)
+![](docs/Picture8.png)
