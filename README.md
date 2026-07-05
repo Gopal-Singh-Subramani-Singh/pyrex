@@ -18,39 +18,43 @@ Choosing the wrong inference backend on Apple Silicon leaves performance on the 
 
 ## Architecture
 
-```
-CLI (Typer: run / compare / report / baseline / list)
-  │
-  ├── BenchmarkRunner
-  │     ├── Backends:
-  │     │     ├── PyTorch MPS   (torch.mps)
-  │     │     ├── PyTorch CPU   (torch, cpu device)
-  │     │     ├── ONNX Runtime  (onnxruntime + CoreML EP)
-  │     │     └── Apple MLX     (mlx — optional, graceful fallback)
-  │     ├── Kernels:
-  │     │     ├── attention     (scaled dot-product attention)
-  │     │     ├── ffn           (2-layer feed-forward + GELU)
-  │     │     ├── matmul        (general matrix multiply)
-  │     │     ├── layernorm     (layer normalisation)
-  │     │     ├── conv2d        (2D convolution, ResNet dims)
-  │     │     └── embedding     (token embedding + positional encoding)
-  │     └── Telemetry:
-  │           ├── MPS memory    (torch.mps.current_allocated_memory)
-  │           ├── CPU memory    (psutil RSS)
-  │           ├── CPU %         (psutil)
-  │           └── Power (W)     (macOS powermetrics — optional)
-  │
-  ├── RegressionDetector
-  │     └── z-score vs baseline (threshold: delta% > 5% AND z-score ≥ 2.0)
-  │
-  ├── RooflineAnalyser
-  │     └── TFLOPS vs arithmetic intensity chart
-  │
-  ├── ReportGenerator
-  │     └── HTML report (Jinja2 + matplotlib)
-  │
-  └── ResultStore
-        └── DuckDB + Parquet (full run history)
+```mermaid
+flowchart TD
+    CLI([CLI\nrun · compare · report\nbaseline · list]) --> BR
+
+    subgraph BR [BenchmarkRunner]
+        direction LR
+        subgraph BACKENDS [Backends]
+            MPS[PyTorch MPS]
+            CPU[PyTorch CPU]
+            ONNX[ONNX Runtime\nCoreML EP]
+            MLX[Apple MLX\noptional]
+        end
+        subgraph KERNELS [Kernels]
+            ATT[attention]
+            FFN[ffn]
+            MM[matmul]
+            LN[layernorm]
+            CV[conv2d]
+            EMB[embedding]
+        end
+        subgraph TEL [Telemetry]
+            MEM[MPS memory\npsutil RSS]
+            CPU_P[CPU %]
+            PWR[powermetrics\noptional]
+        end
+    end
+
+    BR --> RD[RegressionDetector\nz-score vs baseline\nthreshold: Δ>5% AND z≥2.0]
+    BR --> RA[RooflineAnalyser\nTFLOPS vs arithmetic intensity]
+    BR --> RG[ReportGenerator\nHTML · Jinja2 + matplotlib]
+    BR --> RS[(ResultStore\nDuckDB + Parquet\nfull run history)]
+
+    RD -->|gates PRs| CI[GitHub Actions CI\npost regression table\nblock on regression]
+
+    style CLI fill:#4A90D9,color:#fff
+    style RD fill:#C0392B,color:#fff
+    style CI fill:#2E8B57,color:#fff
 ```
 
 ---

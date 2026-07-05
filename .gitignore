@@ -40,3 +40,10 @@ temp/
 # Database files
 *.db-shm
 *.db-wal
+*.db
+
+# Pyrex generated output
+results/*.json
+results/*.html
+results/*.png
+results/*.duckdb
